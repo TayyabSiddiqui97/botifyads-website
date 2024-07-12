@@ -1,17 +1,15 @@
-/* Base Styles */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #4d4d4d; /* Changed to match logo text color */
+    color: #333;
 }
 
-/* Header Styles */
 header {
-    background: linear-gradient(90deg, #ff9a8b, #ffd1d1);
+    background-color: #009688; /* Teal */
     color: #fff;
-    padding: 1rem 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -26,7 +24,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -34,78 +32,59 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Main Content Styles */
 main {
     padding: 20px;
 }
 
-/* Section Styles */
-#intro {
-    background: linear-gradient(90deg, #ff9a8b, #ffd1d1);
-    color: #4d4d4d; /* Changed to match logo text color */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+h1, h2, h3 {
+    color: #FF5722; /* Orange */
 }
 
-section {
-    background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
-    color: #4d4d4d; /* Changed to match logo text color */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-h1, h2 {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #4d4d4d; /* Changed to match logo text color */
-}
-
-ul, ol {
-    padding-left: 40px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Button Styles */
 button {
-    background-color: #ff9a8b;
-    color: #fff;
+    background-color: #FF5722; /* Orange */
     border: none;
+    color: #fff;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
+    text-transform: uppercase;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #ffd1d1;
+    background-color: #E64A19;
 }
 
-/* Footer Styles */
-footer {
-    background: linear-gradient(90deg, #ff9a8b, #ffd1d1);
-    color: #4d4d4d; /* Changed to match logo text color */
+section#intro {
+    background-color: #E0F2F1; /* Light Teal */
+    padding: 20px;
     text-align: center;
-    padding: 1rem 0;
 }
 
-/* Media Queries */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    header img {
-        max-width: 100px;
-    }
+section#blog, section#faq {
+    margin-top: 40px;
+}
+
+article {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+article h3 a {
+    color: #009688;
+    text-decoration: none;
+}
+
+article h3 a:hover {
+    text-decoration: underline;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #009688;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
